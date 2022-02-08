@@ -22,9 +22,10 @@ async def push_update():
 async def on_ready():
     while True:
         try:
-            await push_update()
-        finally:
             await sleep(INTERVAL)
+            await push_update()
+        except:
+            continue
         
 
 if __name__ == "__main__":
