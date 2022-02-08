@@ -16,7 +16,7 @@ async def push_update():
         most_recent = history.trade_history[0]
         price = most_recent.price_usd
 
-    await guild.me.edit(nick=f"Rich @ USD%.2f"%price)
+        await guild.me.edit(nick=f"Rich @ USD%.2f"%price)
 
 @discord_client.event
 async def on_ready():
