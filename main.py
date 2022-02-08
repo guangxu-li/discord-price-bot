@@ -3,7 +3,7 @@ import discord
 
 from dexscreener import DexscreenerClient
 
-BOT_TOKEN = 'OTM5OTI1OTUzNjQ2MzA5NDE4.Yf_8Qg.Ar0vKuR3NyzsN1K90fVmMNk4VTE'
+BOT_TOKEN = 'OTM5OTI1OTUzNjQ2MzA5NDE4.Yf_8Qg.KAL9wScBMaMbVqcFotUcxEHpJk0'
 INTERVAL = 5
 
 discord_client = discord.Client()
