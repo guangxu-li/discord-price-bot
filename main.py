@@ -21,8 +21,11 @@ async def push_update():
 @discord_client.event
 async def on_ready():
     while True:
-        await push_update()
-        await sleep(INTERVAL)
+        try:
+            await push_update()
+        finally:
+            await sleep(INTERVAL)
+        
 
 if __name__ == "__main__":
     discord_client.run(BOT_TOKEN)
